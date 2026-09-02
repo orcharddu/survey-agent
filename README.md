@@ -1,8 +1,36 @@
----
-layout: default
-title: Survey Agent
----
+# Survey agent
 
+An AI agent that automatically searches and organizes recent and
+relevant papers to generate a traceable survey based on user-provided topic.
+
+## How to run the survey agent
+
+This project use `uv` as project manager.
+
+Please make sure `uv` is installed on the computer first! Check uv docs [here](https://docs.astral.sh/uv/getting-started/installation/).
+
+To sync project dependencies at the first run, type:
+
+```bash
+uv sync
+```
+
+You also need to configure Deepseek API in `config.py` first.
+
+To run the project in server (webpage) mode, type:
+```bash
+uv run chainlit run app.py
+```
+
+To run the project in console mode, type:
+```bash
+uv run main.py
+```
+
+## Screenshot
+![Chart0](assets/screenshot.png)
+
+An example of the result could be found [here](assets/chain_of_thought_survey.md).
 
 ## Motivation
 
@@ -62,9 +90,9 @@ The system is modeled as a state machine with four core stages.
 - Evaluation Stage
 - Refinement Stage
 
-![Chart1](assets/images/chart1.png)
+![Chart1](assets/chart1.png)
 
-![Chart2](assets/images/chart2.png)
+![Chart2](assets/chart2.png)
 
 #### Research Stage
 
