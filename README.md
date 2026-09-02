@@ -3,11 +3,14 @@
 An AI agent that automatically searches and organizes recent and
 relevant papers to generate a traceable survey based on user-provided topic.
 
+## Screenshot
+![Chart0](assets/screenshot.png)
+
+The example result from the generated "Chain of thought" survey could be found [here](assets/chain_of_thought_survey.md).
+
 ## How to run the survey agent
 
-This project use `uv` as project manager.
-
-Please make sure `uv` is installed on the computer first! Check uv docs [here](https://docs.astral.sh/uv/getting-started/installation/).
+This project use `uv` as project manager. Please make sure `uv` is installed first!
 
 To sync project dependencies at the first run, type:
 
@@ -26,11 +29,6 @@ To run the project in console mode, type:
 ```bash
 uv run main.py
 ```
-
-## Screenshot
-![Chart0](assets/screenshot.png)
-
-An example of the result could be found [here](assets/chain_of_thought_survey.md).
 
 ## Motivation
 
